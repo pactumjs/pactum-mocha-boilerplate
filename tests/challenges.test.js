@@ -7,7 +7,7 @@ describe('First Real Challenge', () => {
     const title = this.test.ctx.currentTest.title;
     setLogger(title);
     logger.info({}, `Test Started - ${title}`);
-    this.test.ctx.currentTest.attachments = [ `/logs/${title}.log`];
+    this.test.ctx.currentTest.attachments = [ `./logs/${title}.log`];
   });
 
   it('get all challenges', async function () {
@@ -33,7 +33,7 @@ describe('Creation Challenges with POST', () => {
     const title = this.test.ctx.currentTest.title;
     setLogger(title);
     logger.info({}, `Test Started - ${title}`);
-    this.test.ctx.currentTest.attachments = [ `/logs/${title}.log`];
+    this.test.ctx.currentTest.attachments = [ `./logs/${title}.log`];
   });
 
   it('create a todo', async function () {
