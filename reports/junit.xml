@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.420" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-04-13T09:26:34" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="First Real Challenge" timestamp="2025-04-13T09:26:36" tests="1" file="/pactumjs/pactum-mocha-boilerplate/tests/challenges.test.js" time="0.956" failures="0">
+    <testcase name="First Real Challenge get all challenges" time="0.947" classname="get all challenges">
+      <system-out>[[ATTACHMENT|/logs/&quot;before each&quot; hook for &quot;get all challenges&quot;.log]]</system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="Creation Challenges with POST" timestamp="2025-04-13T09:26:37" tests="2" file="/pactumjs/pactum-mocha-boilerplate/tests/challenges.test.js" time="1.408" failures="0">
+    <testcase name="Creation Challenges with POST create a todo" time="0.724" classname="create a todo">
+      <system-out>[[ATTACHMENT|/logs/&quot;before each&quot; hook for &quot;create a todo&quot;.log]]</system-out>
+    </testcase>
+    <testcase name="Creation Challenges with POST create a todo with invalid doneStatus" time="0.673" classname="create a todo with invalid doneStatus">
+      <system-out>[[ATTACHMENT|/logs/&quot;before each&quot; hook for &quot;create a todo with invalid doneStatus&quot;.log]]</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

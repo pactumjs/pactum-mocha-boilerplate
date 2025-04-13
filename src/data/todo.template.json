@@ -1,0 +1,7 @@
+{
+  "CREATE_TODO_PAYLOAD": {
+    "title": "train new staff",
+    "doneStatus": true,
+    "description": "Train new staff to do the job"
+  }
+}
