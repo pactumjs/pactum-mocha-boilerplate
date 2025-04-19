@@ -1,9 +1,10 @@
-[2025-04-13 09:23:44.992 +0000] INFO (64691): Request: POST /todos
+[2025-04-19 11:05:37.449 +0000] INFO (12440): Test Started - create a todo
+[2025-04-19 11:05:39.196 +0000] INFO (12440): Request: POST /todos
     request: {
       "method": "POST",
       "url": "https://apichallenges.eviltester.com/todos",
       "headers": {
-        "X-CHALLENGER": "2fed003b-e29a-46e0-b67a-47a4785ccb58"
+        "X-CHALLENGER": "71124121-b844-4abc-b74b-a4f11b35313a"
       },
       "body": {
         "title": "train new staff",
@@ -13,63 +14,20 @@
     }
     response: {
       "statusCode": 201,
-      "responseTime": 653,
+      "responseTime": 1746,
       "headers": {
-        "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744536224&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=zNN%2BFJGQmJDBgV%2FyZ%2B5pBhFHUo7M39edrTuHhDyF1A8%3D\"}]}",
-        "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1744536224&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=zNN%2BFJGQmJDBgV%2FyZ%2B5pBhFHUo7M39edrTuHhDyF1A8%3D",
+        "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1745060739&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=5anK0WUtWZJ%2B52rTZ0AjnIA9embkXEWet87%2BvRFInTk%3D\"}]}",
+        "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1745060739&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=5anK0WUtWZJ%2B52rTZ0AjnIA9embkXEWet87%2BvRFInTk%3D",
         "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
         "connection": "close",
-        "date": "Sun, 13 Apr 2025 09:23:44 GMT",
+        "date": "Sat, 19 Apr 2025 11:05:39 GMT",
         "content-type": "application/json",
         "x-robots-tag": "noindex",
         "location": "/todos/13",
         "access-control-allow-origin": "*",
         "access-control-allow-credentials": "true",
         "access-control-allow-headers": "*",
-        "x-challenger": "2fed003b-e29a-46e0-b67a-47a4785ccb58",
-        "access-control-allow-methods": "*",
-        "access-control-expose-headers": "*",
-        "server": "Jetty(9.4.z-SNAPSHOT)",
-        "via": "1.1 vegur"
-      },
-      "body": {
-        "id": 13,
-        "title": "train new staff",
-        "doneStatus": true,
-        "description": "Train new staff to do the job"
-      }
-    }
-[2025-04-13 09:23:44.992 +0000] INFO (64691): Test Started - create a todo with invalid doneStatus
-[2025-04-13 09:26:37.289 +0000] INFO (65039): Test Started - create a todo
-[2025-04-13 09:26:38.012 +0000] INFO (65039): Request: POST /todos
-    request: {
-      "method": "POST",
-      "url": "https://apichallenges.eviltester.com/todos",
-      "headers": {
-        "X-CHALLENGER": "fbd7472b-05af-4ea4-ba29-996d12a7a753"
-      },
-      "body": {
-        "title": "train new staff",
-        "doneStatus": true,
-        "description": "Train new staff to do the job"
-      }
-    }
-    response: {
-      "statusCode": 201,
-      "responseTime": 723,
-      "headers": {
-        "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744536397&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=YZ%2Faef9bh7O1aaBWXNcN8TESwNOzDglR8brnVEnEN6I%3D\"}]}",
-        "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1744536397&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=YZ%2Faef9bh7O1aaBWXNcN8TESwNOzDglR8brnVEnEN6I%3D",
-        "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
-        "connection": "close",
-        "date": "Sun, 13 Apr 2025 09:26:37 GMT",
-        "content-type": "application/json",
-        "x-robots-tag": "noindex",
-        "location": "/todos/13",
-        "access-control-allow-origin": "*",
-        "access-control-allow-credentials": "true",
-        "access-control-allow-headers": "*",
-        "x-challenger": "fbd7472b-05af-4ea4-ba29-996d12a7a753",
+        "x-challenger": "71124121-b844-4abc-b74b-a4f11b35313a",
         "access-control-allow-methods": "*",
         "access-control-expose-headers": "*",
         "server": "Jetty(9.4.z-SNAPSHOT)",

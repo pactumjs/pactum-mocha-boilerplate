@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="4.420" tests="3" failures="0">
-  <testsuite name="Root Suite" timestamp="2025-04-13T09:26:34" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="10.782" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-04-19T11:05:30" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="First Real Challenge" timestamp="2025-04-13T09:26:36" tests="1" file="/pactumjs/pactum-mocha-boilerplate/tests/challenges.test.js" time="0.956" failures="0">
-    <testcase name="First Real Challenge get all challenges" time="0.947" classname="get all challenges">
-      <system-out>[[ATTACHMENT|/logs/&quot;before each&quot; hook for &quot;get all challenges&quot;.log]]</system-out>
+  <testsuite name="First Real Challenge" timestamp="2025-04-19T11:05:35" tests="1" file="/Users/anudeep/Documents/my/repos/pactumjs/pactum-mocha-boilerplate/tests/challenges.test.js" time="1.729" failures="0">
+    <testcase name="First Real Challenge get all challenges" time="1.718" classname="get all challenges">
+      <system-out>[[ATTACHMENT|./logs/get all challenges.log]]</system-out>
     </testcase>
   </testsuite>
-  <testsuite name="Creation Challenges with POST" timestamp="2025-04-13T09:26:37" tests="2" file="/pactumjs/pactum-mocha-boilerplate/tests/challenges.test.js" time="1.408" failures="0">
-    <testcase name="Creation Challenges with POST create a todo" time="0.724" classname="create a todo">
-      <system-out>[[ATTACHMENT|/logs/&quot;before each&quot; hook for &quot;create a todo&quot;.log]]</system-out>
+  <testsuite name="Creation Challenges with POST" timestamp="2025-04-19T11:05:37" tests="2" file="/Users/anudeep/Documents/my/repos/pactumjs/pactum-mocha-boilerplate/tests/challenges.test.js" time="3.705" failures="1">
+    <testcase name="Creation Challenges with POST create a todo" time="1.746" classname="create a todo">
+      <system-out>[[ATTACHMENT|./logs/create a todo.log]]</system-out>
     </testcase>
-    <testcase name="Creation Challenges with POST create a todo with invalid doneStatus" time="0.673" classname="create a todo with invalid doneStatus">
-      <system-out>[[ATTACHMENT|/logs/&quot;before each&quot; hook for &quot;create a todo with invalid doneStatus&quot;.log]]</system-out>
+    <testcase name="Creation Challenges with POST create a todo with invalid doneStatus" time="1.945" classname="create a todo with invalid doneStatus">
+      <system-out>[[ATTACHMENT|./logs/create a todo with invalid doneStatus.log]]</system-out>
+      <failure message="Expected values to be strictly deep-equal:
+[32m+ actual[39m [31m- expected[39m
+
+  {
+    errorMessages: [
+[32m+[39m     &apos;Failed Validation: doneStatus should be BOOLEAN but was STRING&apos;
+[31m-[39m     &apos;Failed Validation: doneStatus should be BOOLEAN&apos;
+    ]
+  }" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+[32m+ actual[39m [31m- expected[39m
+
+  {
+    errorMessages: [
+[32m+[39m     'Failed Validation: doneStatus should be BOOLEAN but was STRING'
+[31m-[39m     'Failed Validation: doneStatus should be BOOLEAN'
+    ]
+  }
+    at Expect._validateJson (node_modules/pactum/src/models/expect.js:223:14)
+    at Expect.validate (node_modules/pactum/src/models/expect.js:54:10)
+    at Tosser.validateResponse (node_modules/pactum/src/models/Tosser.js:255:23)
+    at Tosser.validate (node_modules/pactum/src/models/Tosser.js:219:18)
+    at Tosser.toss (node_modules/pactum/src/models/Tosser.js:46:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+      + expected - actual
+
+       {
+         "errorMessages": [
+      -    "Failed Validation: doneStatus should be BOOLEAN but was STRING"
+      +    "Failed Validation: doneStatus should be BOOLEAN"
+         ]
+       }
+      ]]></failure>
     </testcase>
   </testsuite>
 </testsuites>

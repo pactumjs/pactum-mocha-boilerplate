@@ -1,14 +1,6 @@
 const { spec } = require('pactum');
-const { logger, setLogger } = require('../src/utils/logger');
 
 describe('First Real Challenge', () => {
-
-  beforeEach(function () {
-    const title = this.test.ctx.currentTest.title;
-    setLogger(title);
-    logger.info({}, `Test Started - ${title}`);
-    this.test.ctx.currentTest.attachments = [ `./logs/${title}.log`];
-  });
 
   it('get all challenges', async function () {
     await spec()
@@ -28,13 +20,6 @@ describe('First Real Challenge', () => {
 });
 
 describe('Creation Challenges with POST', () => {
-
-  beforeEach(function () {
-    const title = this.test.ctx.currentTest.title;
-    setLogger(title);
-    logger.info({}, `Test Started - ${title}`);
-    this.test.ctx.currentTest.attachments = [ `./logs/${title}.log`];
-  });
 
   it('create a todo', async function () {
     await spec()
